@@ -7,6 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title><?= e($pageTitle ?? 'Expense Tracker') ?></title>
 <link rel="stylesheet" href="assets/style.css">
+<link rel="stylesheet" href="assets/account-menu.css">
 </head>
 <body>
 <div class="app">
@@ -25,6 +26,20 @@
 <main class="main">
 <header class="topbar">
     <div class="mobile-brand">Expense Tracker</div>
-    <div class="top-actions"><a class="user-menu" href="profile.php" title="Open profile"><span class="avatar"><?= e(strtoupper(substr($_SESSION['name'] ?? 'U',0,1))) ?></span><span><?= e($_SESSION['name'] ?? '') ?></span><span class="user-chevron">▾</span></a><a class="logout-link" href="logout.php">Logout</a></div>
+    <div class="top-actions">
+        <details class="account-menu">
+            <summary class="user-menu" title="Open account menu">
+                <span class="avatar"><?= e(strtoupper(substr($_SESSION['name'] ?? 'U',0,1))) ?></span>
+                <span><?= e($_SESSION['name'] ?? '') ?></span>
+                <span class="user-chevron">▾</span>
+            </summary>
+            <div class="account-dropdown">
+                <div class="account-heading"><span class="account-label">Signed in as</span><strong><?= e($_SESSION['name'] ?? '') ?></strong></div>
+                <a href="dashboard.php">⌂ <span>Dashboard</span></a>
+                <a href="profile.php">⚙ <span>Profile settings</span></a>
+                <a class="account-logout" href="logout.php">⇥ <span>Logout</span></a>
+            </div>
+        </details>
+    </div>
 </header>
 <section class="content">
