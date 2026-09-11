@@ -9,12 +9,12 @@ A simple PHP + MySQL OOP CRUD system for a short academic project.
 - PDO MySQL extension
 
 ## Setup
-1. Copy the `student-expense-tracker` folder into `htdocs` (XAMPP).
+1. Copy the `Student_Expense_Tracker` folder into `htdocs` (XAMPP).
 2. Start Apache and MySQL.
 3. Open phpMyAdmin.
 4. Import `database.sql`.
 5. Check `config/Database.php` and change the MySQL username/password if needed.
-6. Visit `http://localhost/student-expense-tracker/`.
+6. Visit `http://localhost/Student_Expense_Tracker/`.
 7. Demo login:
    - Username: `student`
    - Password: `password`

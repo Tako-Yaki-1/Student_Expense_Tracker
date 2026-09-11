@@ -36,4 +36,4 @@ INSERT INTO categories (category_name) VALUES
 
 -- Demo password is: password
 INSERT INTO users (name, username, password, role)
-VALUES ('Demo Student', 'student', '$2y$10$92IXUNpkjO0rOQ5byMi.Ye4oKoEa3Ro9llC2cX0wYf5qQf2Q5z5xK', 'student');
+VALUES ('Demo Student', 'student', '$2y$10$jE4/VvEG/.Ud6mHrP86BNeuDFc8JBMbBFnoczATdizRbV4CDS9Whi', 'student');
