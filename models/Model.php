@@ -1,9 +1,9 @@
 <?php
 abstract class Model {
-    protected PDO $db;
+    protected Storage $storage;
 
-    public function __construct(PDO $db) {
-        $this->db = $db;
+    public function __construct(Storage $storage) {
+        $this->storage = $storage;
     }
 
     abstract public function create(array $data): bool;

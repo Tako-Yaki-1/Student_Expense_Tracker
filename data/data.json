@@ -1,0 +1,21 @@
+{
+    "users": [
+        {
+            "id": 1,
+            "name": "Demo Student",
+            "username": "student",
+            "password": "$2y$10$jE4\/VvEG\/.Ud6mHrP86BNeuDFc8JBMbBFnoczATdizRbV4CDS9Whi",
+            "role": "student"
+        }
+    ],
+    "categories": [
+        {"id": 1, "category_name": "Food"},
+        {"id": 2, "category_name": "Transportation"},
+        {"id": 3, "category_name": "School"},
+        {"id": 4, "category_name": "Entertainment"},
+        {"id": 5, "category_name": "Shopping"},
+        {"id": 6, "category_name": "Bills"},
+        {"id": 7, "category_name": "Other"}
+    ],
+    "expenses": []
+}
